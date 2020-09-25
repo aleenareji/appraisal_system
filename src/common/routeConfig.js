@@ -1,12 +1,19 @@
 import { App } from '../features/home';
 import { PageNotFound } from '../features/common';
 import homeRoute from '../features/home/route';
+import Login from '../features/login/Login';
+import loginRoute from '../features/login/route';
 import commonRoute from '../features/common/route';
 import _ from 'lodash';
 
-const childRoutes = [homeRoute, commonRoute];
+const childRoutes = [homeRoute, commonRoute,loginRoute];
 
 const routes = [
+  {
+    path: '/login',
+    component: Login,
+    childRoutes: [...loginRoute],
+  },
   {
     path: '/',
     component: App,

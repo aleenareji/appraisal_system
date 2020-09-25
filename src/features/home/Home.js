@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import SideBar from './SideBar';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import { GoogleLogout } from "react-google-login";
+
 
 export class Home extends Component {
   static propTypes = {
@@ -13,7 +16,7 @@ export class Home extends Component {
   render() {
     return (
       <div className="home-home">
-       <h2>React application</h2>
+       <h2>Welcome To Appraisal System</h2>
       </div>
     );
   }

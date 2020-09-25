@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import SideBar from './SideBar';
+import { Redirect } from 'react-router-dom';
+
 export default class App extends Component {
+  constructor(props){
+    super(props);
+  
+  }
   static propTypes = {
     children: PropTypes.node,
   };
@@ -10,10 +17,18 @@ export default class App extends Component {
   };
 
   render() {
+    const isAuthenticated =localStorage.getItem('myToken');
+    if(isAuthenticated === null){
+      return <Redirect to="/login" />;
+    }
+  
     return (
-      <div className="home-app">
-        <div className="page-container">{this.props.children}</div>
+      <React.Fragment>
+      <div> 
+        <SideBar />
+        <div className="main-content">{this.props.children}</div>
       </div>
+      </React.Fragment>
     );
   }
 }
