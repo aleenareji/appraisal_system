@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 
+
 export class Home extends Component {
   static propTypes = {
     home: PropTypes.object.isRequired,
@@ -13,7 +14,7 @@ export class Home extends Component {
   render() {
     return (
       <div className="home-home">
-       <h2>React application</h2>
+       <h2>Welcome To Appraisal System</h2>
       </div>
     );
   }

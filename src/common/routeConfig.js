@@ -2,9 +2,10 @@ import { App } from '../features/home';
 import { PageNotFound } from '../features/common';
 import homeRoute from '../features/home/route';
 import commonRoute from '../features/common/route';
+import questionRoute from '../features/questions/route';
 import _ from 'lodash';
 
-const childRoutes = [homeRoute, commonRoute];
+const childRoutes = [homeRoute, commonRoute,questionRoute];
 
 const routes = [
   {
