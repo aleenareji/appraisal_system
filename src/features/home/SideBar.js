@@ -27,7 +27,6 @@ const Navigation = ({ className = null }) => {
 };
 
 function NavigationBar(props) {
-
   return (
     <aside>
       <div className="side-nav-container">
