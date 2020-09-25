@@ -3,7 +3,7 @@ import {
 } from './';
 
 export default {
-  path: '/',
+  path: '/dashboard',
   name: 'Home',
   childRoutes: [
     { path: 'home',
