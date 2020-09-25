@@ -10,7 +10,6 @@ export const Dialog = (props) => {
     setModalOpen(false);
     props.onClose(isModalOpen);
   };
-
   const onOutsideClick = (e) => {
     if (e.target.classList.contains('dialogModal')) {
       setModalOpen(false);
@@ -50,5 +49,4 @@ export const Dialog = (props) => {
     </div>
   );
 };
-
 export default Dialog;

@@ -3,10 +3,10 @@ import { PageNotFound } from '../features/common';
 import homeRoute from '../features/home/route';
 import commonRoute from '../features/common/route';
 import questionRoute from '../features/questions/route';
+import SendNotification from '../features/sendNotification/route';
 import _ from 'lodash';
 
-const childRoutes = [homeRoute, commonRoute,questionRoute];
-
+const childRoutes = [homeRoute, commonRoute,questionRoute,SendNotification];
 const routes = [
   {
     path: '/',
