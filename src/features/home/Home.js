@@ -13,7 +13,7 @@ export class Home extends Component {
   render() {
     return (
       <div className="home-home">
-       <h2>React application</h2>
+       <h2>Welcome To Appraisal System</h2>
       </div>
     );
   }
