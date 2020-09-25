@@ -1,6 +1,7 @@
 import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
+
 const DataTableHeader = props => {
   const title = props.title || 'title';
   const buttonIcon = props.icon || 'plus';
